@@ -27,14 +27,14 @@
             
             <label for="subtotal">
                 Sub Total
-                 <input type = "text" id="subtotal" value="0.00" readonly/>
+                 <input type = "text" id="subtotal" name ="subtotal" value="0.00" readonly/>
                 
             </label>
             
             <br/>
             <label for="total">
                 Total
-                <input type = "text" id="total" value="0.00" readonly/>
+                <input type = "text" id="total" name="total" value="0.00" readonly/>
             </label>
             
             <br/>
