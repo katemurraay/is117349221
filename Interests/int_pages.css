@@ -1,14 +1,19 @@
 #section1{
-    background-color: rgb(238 ,0 ,90);
+    background-image: url(Amsterdam.jpg);
+    
+    height: auto;
 }
 
 #section2{
-    background-color: rgb(44, 62, 80);
+    background-image: url(Croatia.jpg);
+    
+    height: auto;
 }
 #section3{
-    background-color: rgb(51, 153, 204);
+    background-image: url(Australia.jpg);
+    
+    height: auto;
 }
-
 .section{
     text-align:center;
     color: white;
