@@ -1,19 +1,4 @@
-#section1{
-    background-image: url(Amsterdam.jpg);
-    
-    height: auto;
-}
 
-#section2{
-    background-image: url(Croatia.jpg);
-    
-    height: auto;
-}
-#section3{
-    background-image: url(Australia.jpg);
-    
-    height: auto;
-}
 .section{
     text-align:center;
     color: white;
