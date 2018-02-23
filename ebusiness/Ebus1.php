@@ -11,59 +11,75 @@
     
     <body>
         
-            <h4>Select a Product</h4>
+             <h4>Select a Product</h4>
+        <br/>
+        <form method = "POST" action = "ebus2.php">
+            <label for="salesforce">
+                <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
+                salesforce @ $1000
+            </label>
             
             <br/>
             
-            <form method="POST" action="Ebus2.php">
-              
-              <label for="salesforce">
-                <input type="radio" id="salesforce" name="product" checkedonClick="disablebtnProceed()"/>
-                SalesForce @ $100
-              </label>
-              
-              <br/>
-               <label for="cloud9">
-                <input type="radio" id="cloud9" name="product" checkedonClick="disablebtnProceed()"/>
+            <label for="Cloud9">
+                <input type="radio" id="cloud9" name="product" checked onClick="disablebtnProceed()">
                 Cloud 9 @ $200
-              </label>
-              
-              <br/>
-              
-              
-              <label for="aws">
-                <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
-                Amazon Web Services @ $300
-              </label>
-              
-              <br/>
-              <label for="gmail">
-                <input type="radio" id="gmail" name="product" onClick="disablebtnProceed()"/>
-                Gmail @ $400
-              </label>
-              <br/>
-              
-              <label for="subtotal">
-                Sub Total
-                <input type="text" id="subtotal" value="0.00" readonly/>
-              </label>
-              
-              <br/>
-              
-              <label for="total">
-                Total
-                <input type="hidden" id="total" name="total" value="0.00" readonly/>
-              </label>
-    
-              <br/>
-              
-              <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            </label>
             
-            </form>
             
             <br/>
-            <button onClick="calcSub()">Calculate Cost</button>
-            <a role="button" href="Ebus1.php">Clear Choice</a>
-    
+                        
+            <label for="aws">
+                <input type = "radio" id="aws" name="product" onClick="disablebtnProceed()"/>
+                AWS @ $300
+            </label>
+            <br/>
+            <label for="Gmail">
+                <input type = "radio" id="gmail" name="product" onClick="disablebtnProceed()"/>
+                Gmail @ $400
+                
+                
+            </label>
+            
+            <br/>
+            <br/>
+            
+            <label for="subtotal">
+                Sub Total: 
+                <div="inline">
+                    <input type="text" id="subtotal" value="0.00" readonly/>
+                </div>
+            </label>
+            
+            <br/><br/>
+            
+            <label for="discount">
+                Discount:
+                <input type="text" id="discount" name="total" value="0.00" readonly/>
+            </label>
+            <br/><br/>
+            <label for="vat">
+                VAT:
+                <input type="text" id="vat" name="vat" value="0.00" readonly/>
+            </label>
+            
+            <br/>
+            <label for="Total">
+            Total:
+            <div class="inline1">
+                <input type="text" id="total" name="total" value="0.00" readonly/>
+            </div>
+            </label>
+            <br/>
+            <a href="Ebus2.php">
+                <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            </a>
+        </form>
+        
+        <br/>
+        
+        <button onClick="calcSub()" class="Calculate button1">Calculate Cost</button>
+        <a role="button" href="Ebus1.php">Clear Choice</a>
+        <br/><br/><br/><br/>
     </body>
 </html>
