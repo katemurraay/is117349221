@@ -16,7 +16,7 @@
         <form method = "POST" action = "ebus2.php">
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
-                salesforce @ $1000
+                salesforce @ $100
             </label>
             
             <br/>
@@ -46,7 +46,9 @@
             
             <label for="subtotal">
                 Sub Total: 
+                 <br/>
                 <div="inline">
+                  
                     <input type="text" id="subtotal" value="0.00" readonly/>
                 </div>
             </label>
@@ -55,11 +57,13 @@
             
             <label for="discount">
                 Discount:
+                <br/>
                 <input type="text" id="discount" name="total" value="0.00" readonly/>
             </label>
             <br/><br/>
             <label for="vat">
                 VAT:
+                <br/>
                 <input type="text" id="vat" name="vat" value="0.00" readonly/>
             </label>
             
@@ -67,6 +71,7 @@
             <label for="Total">
             Total:
             <div class="inline1">
+                <br/>
                 <input type="text" id="total" name="total" value="0.00" readonly/>
             </div>
             </label>

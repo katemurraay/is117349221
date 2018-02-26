@@ -21,7 +21,7 @@ function validateDetails(){
         alert("Please enter your Name");
     }
     else if (String(email).length<5){
-        alert("Please enter your Name");
+        alert("Please enter your Email");
     }
     
     else if (email=="") {

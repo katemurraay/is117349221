@@ -2,63 +2,43 @@
 
 function calcSub(){
     
-    var argSubTotal;
+       var argSubTotal;
     
-    if(document.getElementById('salesforce').checked) {
+    if(document.getElementById('salesforce').checked){
       argSubTotal = 100;
     }
-    else if(document.getElementById('cloud9').checked) {
-      argSubTotal = 200;
+    if(document.getElementById('gmail').checked){
+      argSubTotal = 400;
     }
-    else if(document.getElementById('aws').checked) {
-      argSubTotal = 300;
-    
+    if(document.getElementById('aws').checked){
+        argSubTotal= 300;
     }
-    else 
-    argSubTotal = 400;
+    if(document.getElementById('cloud9').checked){
+        argSubTotal= 200;
+    }
+
+    calcDisVatTotal(argSubTotal);
     
-    display(argSubTotal);
 }
-calcDiv(argSubTotal);
     
-}
-function calcDiv(parm1){
-  var num1, num2, num3;
-  num1 = .05
-  num2 = parm1 * num1;
-  document.getElementById("discount").value = num2;
-  num3 = parm1 - num2
-  calcVat(num3)
+
+function calcDisVatTotal(parmSubTotal) {
+  var num1, num2, discount, vat, totalPrice;
+  num1 = .05;
+  discount = parmSubTotal * num1;
+  document.getElementById("discount").value = discount;
+  num2 = parmSubTotal - discount;
+  vat = num2 * .1;
+  totalPrice = parmSubTotal-(discount + vat);
+  display(parmSubTotal,discount,vat,totalPrice);
 
 }
 
-function display(parm1){
+function display(parm1,parm2,parm3,parm4){
   document.getElementById("subtotal").value = parm1;
-  enablebtnProceed();
-}
-
-function calcVat(num1){
-  var vat, total;
-  vat = num1 * .1
-  document.getElementById("vat").value = vat
-  total = num1 - vat
-  document.getElementById("total").value = total
-}
-
-function enablebtnProceed(){
-    $('#btnProceed').prop('disabled', false);
-}
-
-function disablebtnProceed(){
-    $('#btnProceed').prop('disabled', true);
-}
-
-
-function display(parm1){
-  
-  document.getElementById("subtotal").value = parm1;
-  document.getElementById("total").value = parm1;
-        
+  document.getElementById("discount").value = parm2;
+  document.getElementById("vat").value = parm3;
+  document.getElementById("total").value = parm4
   enablebtnProceed();
 }
 
