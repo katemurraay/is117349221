@@ -16,7 +16,7 @@
         <form method = "POST" action = "ebus2.php">
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
-                salesforce @ $100
+                Salesforce @ $100
             </label>
             
             <br/>
@@ -49,7 +49,7 @@
                  <br/>
                 <div="inline">
                   
-                    <input type="text" id="subtotal" value="0.00" readonly/>
+                    <input type="text" id="subtotal" value="$0.00" readonly/>
                 </div>
             </label>
             
@@ -58,13 +58,13 @@
             <label for="discount">
                 Discount:
                 <br/>
-                <input type="text" id="discount" name="total" value="0.00" readonly/>
+                <input type="text" id="discount" name="total" value="$0.00" readonly/>
             </label>
             <br/><br/>
             <label for="vat">
                 VAT:
                 <br/>
-                <input type="text" id="vat" name="vat" value="0.00" readonly/>
+                <input type="text" id="vat" name="vat" value="$0.00" readonly/>
             </label>
             
             <br/>
@@ -72,18 +72,23 @@
             Total:
             <div class="inline1">
                 <br/>
-                <input type="text" id="total" name="total" value="0.00" readonly/>
+                <input type="text" id="total" name="total" value="$0.00" readonly/>
             </div>
             </label>
             <br/>
-            <a href="Ebus2.php">
-                <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            
+           <br/>
+            
             </a>
         </form>
+        <button onClick="calcSub()" class="Calculate button1">Calculate Cost</button>
         
         <br/>
+        <br/>
+        <br/>
+        <a href="Ebus2.php">
+                <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
         
-        <button onClick="calcSub()" class="Calculate button1">Calculate Cost</button>
         <a role="button" href="Ebus1.php">Clear Choice</a>
         <br/><br/><br/><br/>
     </body>

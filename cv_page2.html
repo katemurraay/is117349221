@@ -2,9 +2,13 @@
 <html>
     
     <head>
+        
+        
+        
         <style>
 .pagination {
     display: inline-block;
+    position: absolute; right: 0;
 }
 
 .pagination a{
@@ -15,6 +19,9 @@
     transition: background-color .3s;
     border: 1px solid #ddd;
 }
+body {
+    font-family:"verdana";
+}
 
 
 
@@ -23,6 +30,7 @@
 </style>
         
         <title>Education</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel= "stylesheet" href = "mystylesheet.css" type ="text/css" />
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -32,18 +40,62 @@
     </head>
     
     <body>
-        <h1 class = "mainheading"> Educational Details</h1>
-        <p><strong> College:</strong> Mount Mercy College</p>
-        <p><strong> Course:</strong> Second Level</p>
-        <p><strong> Year:</strong> 2011-2017</p>
-        
-        </br>
+        <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+      
+        <!-- Left Column -->
+        <div class= "w3-third">
+        <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+     <div class="w3-display-bottomleft w3-container w3-text-black">
+        </div>
+        </div>
     
+           <h2>Kate Murray</h2>
+            <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-grey"></i>Student</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-grey"></i>Cork, Ireland</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-grey"></i>117349221@umail.ucc.ie</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-grey"></i>(085) *****46</p>
+          <hr>
+          </div>
+          </div>
+          </div>
+          
+          
+          
     
+      <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h1 class="text-grey padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Educational Details</h1>
+         <div class="container">
+             <p class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - <span class="w3-tag w3-teal w3-round">Current</span></p>
         <p><strong> College:</strong> University College Cork</p>
         <p><strong> Course:</strong> Buisness Information Systems</p>
-        <p><strong> Year:</strong> 2017-2022</p>
         
+        
+        
+         </div>
+        </br>
+         <div class="container">
+        <p class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2011 - June 2017</p>
+        <p><strong> College:</strong> Mount Mercy College </p>
+        <p><strong> Course:</strong> Second Level</p>
+        
+        
+        
+         </div>
+         </div>
+         </div>
+   
+   </div>
+          
+          </div>
         <div class="pagination">
           <a href="cv_page1.html">&laquo;</a>
           <a href="cv_page3.html">&raquo;</a>
