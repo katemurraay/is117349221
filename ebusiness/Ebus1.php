@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +16,7 @@
         
              <h4>Select a Product</h4>
         <br/>
-        <form method = "POST" action = "ebus2.php">
+        <form method = "POST" action = "Ebus2.php">
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
                 Salesforce @ $100
@@ -87,9 +90,15 @@
         <br/>
         <br/>
         <a href="Ebus2.php">
-                <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+        <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
         
         <a role="button" href="Ebus1.php">Clear Choice</a>
         <br/><br/><br/><br/>
+        
+         <?php
+        //Set session variables
+        $_SESSION ["total"] =$_POST ["total"];
+       
+        ?>
     </body>
 </html>

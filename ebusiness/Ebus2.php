@@ -1,5 +1,4 @@
 <?php
-//Start the session
 session_start();
 ?>
 
@@ -42,6 +41,7 @@ session_start();
 <button type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
+           
                 
             </form>
             
@@ -50,9 +50,11 @@ session_start();
             <button onClick="validateDetails()"> Validate </button>
         
         <script type="text/javascript" src="ebus2_validator.js"></script>
-        <?php
+             <?php
         //Set session variables
-        $_SESSION ["total"] = $_POST["total"];
+       
+        $_SESSION["user_name"] = $_POST["user_name"];
+        $_SESSION ["user_email"] = $_POST["user_email"];
         ?>
         
     </body>
