@@ -59,7 +59,7 @@ li.dropdown {
 }
 
 body {
-     background:url("homepage.jpg");
+     background:url("homepage_img.jpg");
      background-repeat:no-repeat;
      background-size:cover;
      
@@ -77,8 +77,16 @@ body {
     margin-right: auto;
     width: 50%;
 }
-
-
+.icon {
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
+.icon2{
+     position: fixed;
+  bottom: -4px;
+  right: 120px;
+}
  
 </style>
 
@@ -86,9 +94,8 @@ body {
     </head>
     
     <body> 
-        <h1> 117349221 - IS1113 Project</h1>
-    
-    <ul>
+       
+        <ul>
      
       <li class="dropdown">
     <a href="cv_page1.html" class="dropbtn">Curriculum Vitae</a>
@@ -97,6 +104,7 @@ body {
       <a href="cv_page2.html">Page 2</a>
       <a href="cv_page3.html">Page 3</a>
     </div>
+    </li>
       
       
        <li class="dropdown">
@@ -104,24 +112,32 @@ body {
     <div class="dropdown-content">
       <a href="/Interests/sport.html">Sport</a>
       <a href="/Interests/travel.html">Travel</a>
-      <a href="/Interests/cloud.html"> Cloud</a>
+      <a href="/ebusiness/cloud_services.html"> Cloud</a>
       
     </div>
+      </li>
       
-      
-      <li><a href = "ebusiness/cloud_services.html"> Ebusiness</a></li>
-      
+      <li class="dropdown"><a href = "ebusiness/cloud_services.html"> Cloud Services</a>
+      <div class="dropdown-content">
+          <a href="ebusiness/cloud_services.html">Products</a>
+          <a href="ebusiness/Ebus1.php">Shop</a>
+          </div>
+      </li>
       </ul> 
       
-      <p><a href = "https://github.com/katemurraay/is117349221"> 
-      <img src ="github.jpg" alt= "Github" style = "width:100px; heigth:120px;" class ="center">
+      
+      
+      <div class="icon2"><h5 style="font-family:verdana; color:white; text-align:center;">Github</h5>
+          <a href = "https://github.com/katemurraay/is117349221">
+      <img src ="github_img.jpg" alt= "Github" style = "width:80px; heigth:80px;" class ="center">
       </a>
-      <br/>
-      <br/>
-      <br/>
+      </div>
+      
+      <div class="icon"><h5 style="font-family:verdana; color:white; text-align:center;">Heroku</h5>
       <a href ="https://is117349221.herokuapp.com/">
-          <img src= "heroku.jpg" alt="Heroku" style ="width:170px; height:100px;" class="center">
-      </a></p>
+          <img src= "heroku_img.jpg" alt="Heroku" style ="width:80px; height:80px;" class="center">
+      </a>
+      </div>
        
         
 
