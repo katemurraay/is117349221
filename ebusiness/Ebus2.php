@@ -98,7 +98,7 @@ body {
      background-size:cover;
 }
 
-h3 {
+h1 {
     text-align:center;
 }
 /*styling buttons*/
@@ -124,8 +124,8 @@ h3 {
     border: 2px solid #4CAF50;
   position: absolute;
  
-    top: 54%;  
-     left:475px;
+    top:57%;  
+     left:480px;
 }
 
 .btnpurchase:hover {
@@ -138,7 +138,7 @@ h3 {
     color: black; 
     border: 2px solid #0840F6;
     position: absolute;
-    left:475px;
+    left:480px;
 }
 .btnvalidate:hover {
     background-color: #0840F6;
@@ -152,7 +152,7 @@ h3 {
     
     <body>
         
-        <h3>Please enter your Payment Details</h3>
+        <h1>Please enter your Payment Details</h1>
         
         <div class="sidenav">
             <a href ="../homepage.html">Homepage</a>

@@ -51,7 +51,7 @@ session_start();
             background-size:cover;
             }
 
-            h3 {
+            h1 {
                 text-align:center;
             }
            
@@ -113,8 +113,8 @@ session_start();
     border: 2px solid #4CAF50;
   position: absolute;
  
-    top: 85%;  
-     left:475px;
+    top: 88%;  
+     left:780px;
 }
 
 .btncart:hover {
@@ -127,8 +127,8 @@ session_start();
     color: black; 
     border: 2px solid #FF8900;
     position: absolute;
-    top:75%;
-    left:475px;
+    top:78%;
+    left:780px;
 }
 .btncalculate:hover {
     background-color: #FF8900;
@@ -139,8 +139,8 @@ session_start();
     color: white; 
     border: 2px solid white;
     position: absolute;
-    top:75%;
-   left:620px;
+    top:78%;
+   left:930px;
 }
 .btnclear:hover {
     background-color: white;
@@ -153,7 +153,7 @@ session_start();
     
     <body>
         
-             <h3>Select a Product</h3>
+             <h1>Select a Product</h1>
              <div class="sidenav">
             <a href ="../homepage.html">Homepage</a>
             <a href="../cv_page1.html">Curriculum Vitae</a>
