@@ -2,10 +2,11 @@
 
 function validateDetails(){
     
-    var pin, name, email;
+    var pin, firstname, lastname, email;
     
     pin = document.getElementById("user_pin").value;
-    name = document.getElementById("user_name").value;
+    firstname = document.getElementById("user_fname").value;
+    lastname = document.getElementById("user_lname").value;
     email= document.getElementById("user_email").value;
     
     if (pin==""){
@@ -14,16 +15,13 @@ function validateDetails(){
     else if (String(pin).length<4){
         alert("Please make sure your PIN is accurate");
         }
-    else if (name==""){
+    else if (firstname==""){
         alert("Please enter your Name");
     }
-    else if (String(name).length<2){
+    else if (String(lastname)==""){
         alert("Please enter your Name");
     }
-    else if (String(email).length<5){
-        alert("Please enter your Email");
-    }
-    
+   
     else if (email=="") {
         alert("Please enter your Email");
     }
@@ -38,4 +36,5 @@ function enablebtnPurchase(){
 
 function disablebtnPurchase(){
      $('#btnPurchase').prop('disabled',true);
+     document.getElementById('#btnPurchase').style.visibility="hidden";
 }
