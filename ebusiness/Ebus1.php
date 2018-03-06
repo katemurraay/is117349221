@@ -29,6 +29,7 @@ session_start();
     padding: 16px;
     text-decoration: none;
     display: block;
+    text-align:center;
 }
 
 /* Change colour on hover */
@@ -155,7 +156,7 @@ session_start();
         
              <h1>Select a Product</h1>
              <div class="sidenav">
-            <a href ="../homepage.html">Homepage</a>
+            <a href ="../homepage.html"><img src="../home_icon.jpg" width=25px height=20px></a>
             <a href="../cv_page1.html">Curriculum Vitae</a>
             <a href="cloud_services.html">Cloud Services</a>
             </div>

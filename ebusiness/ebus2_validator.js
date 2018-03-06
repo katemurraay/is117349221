@@ -36,5 +36,5 @@ function enablebtnPurchase(){
 
 function disablebtnPurchase(){
      $('#btnPurchase').prop('disabled',true);
-     document.getElementById('#btnPurchase').style.visibility="hidden";
+    
 }
