@@ -156,7 +156,7 @@ session_start();
         
              <h1>Select a Product</h1>
              <div class="sidenav">
-            <a href ="../homepage.html"><img src="../home_icon.jpg" width=25px height=20px></a>
+            <a href ="../homepage.html"><img src="../home_icon.jpg" alt= home_icon style ="width:25px; height:20px;"></a>
             <a href="../cv_page1.html">Curriculum Vitae</a>
             <a href="cloud_services.html">Cloud Services</a>
             </div>
@@ -227,7 +227,7 @@ session_start();
                 
                 </div>
                 <div class="col-75">
-                <input type="text" id="discount" name="total" value="$0.00" readonly/>
+                <input type="text" id="discount" name="discount" value="$0.00" readonly/>
             </div>
             </div>
             </label>

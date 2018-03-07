@@ -1,5 +1,6 @@
 /* global $ */
 
+
 function validateDetails(){
     
     var pin, firstname, lastname, email;

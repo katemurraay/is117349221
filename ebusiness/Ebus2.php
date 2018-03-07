@@ -169,7 +169,7 @@ h1 {
                 </label>
                 </div>
                  <div class="col-75">
-                <input type="textbox" id="user_fname" placeholder="Enter First Name" maxlength="32">
+                <input type="textbox" name="first_name" id="user_fname" placeholder="Enter First Name" maxlength="32">
                    </div>
     </div>
     <div class="row">
@@ -179,7 +179,7 @@ h1 {
                 </label>
                 </div>
                  <div class="col-75">
-                <input type="textbox" id="user_lname" placeholder="Enter Last Name" maxlength="32">
+                <input type="textbox" name="last_name"id="user_lname" placeholder="Enter Last Name" maxlength="32">
                    </div>
                    
                 </div>
@@ -190,7 +190,7 @@ h1 {
                     </label>
                     </div>
                     <div class="col-75">
-                <input type ="textbox" id="user_email" placeholder ="Enter Email Address" maxlength="100">
+                <input type ="textbox" name="email" id="user_email" placeholder ="Enter Email Address" maxlength="100">
                 </div>
                 </div>
                 <div class="row">
@@ -223,12 +223,10 @@ h1 {
            
         
              <?php
-        //Set session variables
-       
-        $_SESSION["user_name"] = $_POST["user_name"];
-        $_SESSION ["user_email"] = $_POST["user_email"];
-        ?>
+            // Set session variables
+            $_SESSION["total"] = $_POST["total"];
         
+            ?>
     </body>
     
     
