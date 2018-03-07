@@ -15,6 +15,8 @@
     background-color: white;
     color: black;
     border: 2px solid black;
+    margin-left:auto;
+    margin-right:auto;
     
     }
     
@@ -32,36 +34,40 @@
     transition: background-color .3s;
     border: 1px solid #ddd;
 }
-.container {
+.contain {
   position: relative;
-  width: 50%;
+  width:500px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-.boxing_icon{
+.boxing_icon {
   display: block;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  height: auto;
+  border-radius:50%;
 }
-
+.dancing_icon{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius:50%;
+}
 .overlay {
-  position:absolute;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-text-align:center;
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: grey;
-  border-radius: 50%
+  border-radius:50%;
 }
 
-.container:hover .overlay {
+.contain:hover .overlay {
   opacity: 1;
 }
 
@@ -88,20 +94,35 @@ text-align:center;
     </head>
     
     <body>
-        <div class="container">
+        <div class="contain">
         <img src="boxing_icon.jpg" alt="boxing" class="boxing_icon"/>
         <div class="overlay">
     <div class="text">
       
         <p><strong>Boxing</strong></p>
         <br/>
-        <p class="img_toggle"><strong>Training:</strong> Mondays</p></div>
+        <p><strong>Training:</strong><br/> Wednesday: <i> 5pm-7pm</i> <br/> Friday: <i>5pm-7pm</i><br/> Maradyke Arena</p>
+      <p><br/> <a href="https://boxing.ucc.ie/">UCC Boxing</a></p></div>
         </div>
         </div>
         
         <br/>
-  <form action="hompage.html"><button class="button">&laquo;</button></form>
+        <br/>
+        <br/>
+        <div class="contain">
+          <img src="dance_icon.jpg" alt="dancing" class="dancing_icon">
+          <div class="overlay">
+            <div class="text">
+              <p><strong>Dancing</strong></p>
+              <br/>
+              <p><strong>Training:</strong> <br/> Tuesday: <i>9.30pm-10.30pm</i> <br/> Maradyke Arena</p>
+              <p><br/> <a href="https://dance.ucc.ie/">UCC Dance</a></p>
+            </div>
+          </div>
+        </div>
+  
   <form action="travel.html"><button class="button">&raquo;</button></form>
+  <form action="../homepage.html"><button class="button">&laquo;</button></form>
     </body>
     </html>
     
