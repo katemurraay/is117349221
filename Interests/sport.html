@@ -3,11 +3,28 @@
     
     <head>
            <style>
-.pagination {
-    display: inline-block;
+           body {
+             background-color:black;
+           }
+.button {
+    display: block;
+    float:left;
+    float:right;
+    
+    width: 10%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    
+    }
+    
+    .button:hover {
+    background-color: black;
+    color: white;
 }
 
-.pagination a{
+
+.button a{
     color: black;
     float: left;
     padding: 8px 16px;
@@ -15,11 +32,51 @@
     transition: background-color .3s;
     border: 1px solid #ddd;
 }
+.container {
+  position: relative;
+  width: 50%;
+}
 
+.boxing_icon{
+  display: block;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.overlay {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+text-align:center;
+  height: 400px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: grey;
+  border-radius: 50%
+}
 
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 </style>
-        <title> Personal</title>
+        <title> Sports</title>
         <link rel= "stylesheet" href = "../mystylesheet.css" type ="text/css" />
         <link rel="stylesheet" href = "int_pages.css" type = "text/css"/>
         
@@ -31,13 +88,20 @@
     </head>
     
     <body>
-        <h1 class = "mainheading"> Sports</h1>
-        <p><strong> Favourite Sport:</strong> Boxing</p>
-        <p><strong> Training:</strong> Mondays</p>
+        <div class="container">
+        <img src="boxing_icon.jpg" alt="boxing" class="boxing_icon"/>
+        <div class="overlay">
+    <div class="text">
+      
+        <p><strong>Boxing</strong></p>
+        <br/>
+        <p class="img_toggle"><strong>Training:</strong> Mondays</p></div>
+        </div>
+        </div>
         
-        <div class="pagination">
-  <a href="hompage.html">&laquo;</a>
-  <a href="travel.html">&raquo;</a>
+        <br/>
+  <form action="hompage.html"><button class="button">&laquo;</button></form>
+  <form action="travel.html"><button class="button">&raquo;</button></form>
     </body>
     </html>
     

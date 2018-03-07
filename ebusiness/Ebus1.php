@@ -4,7 +4,9 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Select Product</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="utf-8"/>
+        <title>The Cloud</title>
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -154,7 +156,7 @@ session_start();
     
     <body>
         
-             <h1>Select a Product</h1>
+             <h1><i>Please Select a Product</i></h1>
              <div class="sidenav">
             <a href ="../homepage.html"><img src="../home_icon.jpg" alt= home_icon style ="width:25px; height:20px;"></a>
             <a href="../cv_page1.html">Curriculum Vitae</a>
@@ -162,7 +164,7 @@ session_start();
             </div>
         
         <div class="container">
-        <form method = "POST" action = "Ebus2.php">
+        <form method= "POST" action= "Ebus2.php">
             <div class="row">
               <div class="col-25">
             <label for="salesforce">
@@ -175,7 +177,7 @@ session_start();
             
             <div class="row">
       <div class="col-25">
-         <label for="Cloud9">
+         <label for="cloud9">
                 <input type="radio" id="cloud9" name="product" checked onClick="disablebtnProceed()">
                 Cloud 9 @ $200
             </label>
@@ -193,7 +195,7 @@ session_start();
             </div>
             <div class="row">
       <div class="col-25">
-            <label for="Gmail">
+            <label for="gmail">
                 <input type = "radio" id="gmail" name="product" onClick="disablebtnProceed()"/>
                 Gmail @ $400
                 
@@ -208,7 +210,7 @@ session_start();
             
             <div class="container2">
             <div class="row">
-      <div class="col-25">
+           <div class="col-25">
             <label for="subtotal">
                 Sub Total: 
                  </div>
@@ -247,7 +249,7 @@ session_start();
             
             <div class="row">
       <div class="col-25">
-            <label for="Total">
+            <label for="total">
             Total:
             
                 </div>
@@ -263,16 +265,16 @@ session_start();
             
             
         </form>
-        <button class="button btncalculate" onClick="calcSub()" class="Calculate button1">Calculate Cost</button>
+        <button class="button btncalculate" onClick="calcSub()">Calculate Cost</button>
         
         <br/>
         <br/>
         <br/>
-        <a href="Ebus2.php">
+        <form action="Ebus2.php">
         <button class="button btncart" type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
-        </a>
+        </form>
         <a role="button" href="Ebus1.php">
-            <button class="button btnclear">Clear Choice</button>
+            <p class="button btnclear">Clear Choice</p>
             </a>
       
         

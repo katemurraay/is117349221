@@ -5,8 +5,11 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="utf-8"/>
+   
         
-        <title> Enter Details</title>
+        <title> The Cloud</title>
         <style>
         
         /* Style the side navigation */
@@ -156,7 +159,7 @@ h1 {
         <h1>Please enter your Payment Details</h1>
         
         <div class="sidenav">
-            <a href ="../homepage.html"><img src="../home_icon.jpg" width=25px height=20px></a>
+            <a href ="../homepage.html"><img src="../home_icon.jpg" alt="home" style="width:25px; height:20px; border-radius:50%;"></a>
             <a href="cloud_services.html">Cloud Services</a>
             </div>
         
@@ -169,7 +172,7 @@ h1 {
                 </label>
                 </div>
                  <div class="col-75">
-                <input type="textbox" name="first_name" id="user_fname" placeholder="Enter First Name" maxlength="32">
+                <input type="text" name="first_name" id="user_fname" placeholder="Enter First Name" maxlength="32">
                    </div>
     </div>
     <div class="row">
@@ -179,7 +182,7 @@ h1 {
                 </label>
                 </div>
                  <div class="col-75">
-                <input type="textbox" name="last_name"id="user_lname" placeholder="Enter Last Name" maxlength="32">
+                <input type="text" name="last_name" id="user_lname" placeholder="Enter Last Name" maxlength="32">
                    </div>
                    
                 </div>
@@ -190,7 +193,7 @@ h1 {
                     </label>
                     </div>
                     <div class="col-75">
-                <input type ="textbox" name="email" id="user_email" placeholder ="Enter Email Address" maxlength="100">
+                <input type ="email" name="email" id="user_email" placeholder ="Enter Email Address" maxlength="100">
                 </div>
                 </div>
                 <div class="row">

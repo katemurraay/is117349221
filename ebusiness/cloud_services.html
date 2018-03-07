@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head> <title>Cloud Services</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
     <style>
 
         body{
@@ -79,6 +80,12 @@
     background-color: white;
     color: white;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
     </style>
     </head>
     
@@ -92,10 +99,10 @@
      <p>Saas means there is no longer a need for organisations to install and run applications on their computers or in their data centres.  Therefore, there is no longer a need to purchase expensive hardware, as well as software licensing, installation and support. Instead of purchasing software to install, or additional hardware to support it, customers subscribe to a SaaS offering. Thus, allowing customers to make flexible payments monthly using a pay-as-you-go model. This allows many businesses to exercise better and more predictable budgeting. Users can also terminate SaaS offerings at any time to stop those recurring costs.</p>
      <br/>
      <br/>
-    
-     <img src="salesforce.jpg" alt ="salesforce" height ="200px" width="250px">
+    <a href="https://www.salesforce.com/eu/">
+     <img src="salesforce_icon.jpg" alt ="salesforce" style="height:200px; width:250px;">
+     </a>
      
-     <h4>Salesforce</h4>
      <p>Salesforce is the number 1 Customer Relationship Management (CRM) platform. Using a simple login its cloud-based applications for sales, service, marketing, and more, enables business to connecting to customers in a whole new way.</p>
      
      </div>
@@ -106,9 +113,9 @@
      <br/>
      <br/>
      <a href="https://aws.amazon.com/cloud9/">
-         <img src="cloud9.jpg" alt="cloud9" height ="200px" width= "250px">
+         <img src="cloud9.jpg" alt="cloud9" style="height:200px; width:250px;">
      </a>
-     <h4>Cloud9</h4>
+     
      
     <p>Cloud9 provides a computing platform and/or solution stack typically including operating system, programming language execution environment, database, and web server. Application developers can develop and run their software solutions on a cloud platform without the cost and complexity of buying and managing the underlying hardware and software layers.</p> 
     <p>It also offers a seamless experience for developing serverless applications allowing users to easily define resources, debug, and switch between local and remote execution of serverless applications. </p>
@@ -126,9 +133,9 @@ In an IaaS model, a cloud provider hosts the infrastructure components tradition
       <br/>
      <br/>
      <a href = "https://aws.amazon.com/">
-         <img src ="aws.jpg" alt="aws" height ="200px" width ="260px" >
+         <img src ="amazonws.jpg" alt="aws" style="height:200px; width:260px;" >
      </a>
-     <h4>Amazon Web Services</h4>
+     
      <p>Amazon Web Services (AWS) is a secure cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow. Millions of customers have already leveraged AWS cloud products and solutions to build sophisticated applications with increased flexibility, scalability and reliability.</p>
     </div>
     <button class ="accordion">Communications as a Service (CaaS) - Gmail</button>
@@ -137,9 +144,9 @@ In an IaaS model, a cloud provider hosts the infrastructure components tradition
      <p>CaaS offers flexibility which is particularly useful for small and medium-sized business that may not otherwise afford. The network capacity and feature set can be changed from day to day if necessary so that functionality keeps pace with demand. There is no risk of the system becoming obsolete and requiring periodic major upgrades or replacement.</p>
      <br/>
      <br/>
-     <h4>Gmail</h4>
+     
      <a href= "https://gsuite.google.com/products/gmail/">
-         <img src="gmail.jpg" alt="gmail" height ="200px" width=250px>
+         <img src="g_mail.jpg" alt="gmail" style="height:200px; width:250px; ">
      </a>
      </div>
      <!--Javascript function to allow information to be rendered once clicked-->
@@ -159,12 +166,28 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 </script>
-     <a href = "../homepage.html">
-     <button class="button home_button"> &laquo; <img src="../home_icon.jpg" width=25px height=20px> </button>
-     </a>
-     <a href="Ebus1.php">
+<h4 style="text-align:center;"><b><i>More Information:</b></i></h4>
+<div class= "center">
+<a href="https://www.salesforce.com/eu/">
+    <img src="salesforce_icon.jpg" style="width:50px; height:40px;"/>
+</a> &nbsp;
+<a href="https://aws.amazon.com/cloud9/">
+    <img src="cloud9_icon.jpg" style="width:50px; height:40px;"/>
+</a> &nbsp;
+<a href = "https://aws.amazon.com/">
+<img src="amazon_icon.jpg" style="width:50px; height:40px;"/>
+</a> &nbsp;
+<a href="https://gsuite.google.com/products/gmail/">
+    <img src="gmail_icon.jpg" style="width:50px; height:40px;" />
+</a>
+</div>
+
+     <form action = "../homepage.html">
+     <button class="button home_button"> &laquo; <img src="../home_icon.jpg" alt="home" style="width:25px; height:20px;"> </button>
+     </form>
+     <form action="Ebus1.php">
          <button class="button shop_button">Shop &raquo;</button>
-     </a>
+     </form>
     
      </body>
 </html>
