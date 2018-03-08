@@ -158,13 +158,14 @@ session_start();
         
              <h1><i>Please Select a Product</i></h1>
              <div class="sidenav">
-            <a href ="../homepage.html"><img src="../home_icon.jpg" alt= home_icon style ="width:25px; height:20px;"></a>
-            <a href="../cv_page1.html">Curriculum Vitae</a>
+            <a href ="../homepage.html"><img src="../home_icon.jpg" alt= home_icon style ="width:25px; height:20px; border-radius:50%;"></a>
+            
             <a href="cloud_services.html">Cloud Services</a>
             </div>
         
-        <div class="container">
+        
         <form method= "POST" action= "Ebus2.php">
+            <div class="container">
             <div class="row">
               <div class="col-25">
             <label for="salesforce">
@@ -213,58 +214,61 @@ session_start();
            <div class="col-25">
             <label for="subtotal">
                 Sub Total: 
+                 </label>
                  </div>
                 <div class="col-75">
                   
                     <input type="text" id="subtotal" value="$0.00" readonly/>
                 </div>
-                </div>
-            </label>
+                
             
+            </div>
            
             <div class="row">
           <div class="col-25">
             <label for="discount">
                 Discount:
-                
+                 </label>
                 </div>
                 <div class="col-75">
                 <input type="text" id="discount" name="discount" value="$0.00" readonly/>
             </div>
-            </div>
-            </label>
             
+            
+            </div>
             <div class="row">
           <div class="col-25">
             <label for="vat">
             VAT:
-                
+                 </label>
                 </div>
                 <div class="col-75">
                 <input type="text" id="vat" name="vat" value="$0.00" readonly/>
                
             </div>
-            </div>
-             </label>
+            
+            
+             </div>
             
             <div class="row">
       <div class="col-25">
             <label for="total">
             Total:
-            
+             </label>
                 </div>
                 <div class="col-75">
               
                 <input type="text" id="total" name="total" value="$0.00" readonly/>
                 
             </div>
+            
+            
             </div>
-            </label>
+           
             
-           </div>
-            
-            
+            </div>
         </form>
+        
         <button class="button btncalculate" onClick="calcSub()">Calculate Cost</button>
         
         <br/>
@@ -278,10 +282,6 @@ session_start();
             </a>
       
         
-         <?php
-        //Set session variables
-        $_SESSION ["total"] =$_POST ["total"];
-       
-        ?>
+         
     </body>
 </html>
